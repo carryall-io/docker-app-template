@@ -1,0 +1,11 @@
+build:
+  context: .
+  dockerfile: Dockerfile
+
+app:
+  port: 8000
+  environments:
+    - dev
+  persistence:
+    enabled: false
+  sso: false
